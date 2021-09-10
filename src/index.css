@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --height-navbar-pc: 80px;
+    --height-navbar-mobile: 50px;
+    /* Front size */
+    --navbar-front-size: 14px;
+    --front-size-title: 50px;
+    --front-size-details: 20px;
+    /* Color */
+    --default-color: #fff;
+    --text-color-banner-happened: #ffffff;
+    --text-color-banner-bestproduct: #f96400;
+    --text-color-banner-story: #fcd32a;
+    --text-color-banner-issue: #110e03;
+}

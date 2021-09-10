@@ -13,9 +13,13 @@
     --front-size-title: 50px;
     --front-size-details: 20px;
     /* Color */
-    --default-color: #fff;
+    --default-color: #ffffff;
     --text-color-banner-happened: #ffffff;
     --text-color-banner-bestproduct: #f96400;
     --text-color-banner-story: #fcd32a;
     --text-color-banner-issue: #110e03;
+    /* front size product */
+    --front-size-name:0.9em;
+    --front-size-price:16px;
+    --color-price:#222222
 }

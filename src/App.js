@@ -1,4 +1,5 @@
 import Banner from 'Components/Banner/Banner';
+import ListProduct from 'Components/ListProduct/ListProduct';
 import Navbar from 'Components/navbar/Navbar';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <Banner/>
+      <ListProduct/>
     </>
   );
 }

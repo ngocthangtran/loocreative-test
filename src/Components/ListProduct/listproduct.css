@@ -1,0 +1,12 @@
+.shop {
+    padding: 7rem;
+}
+
+.list__product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+@media screen and (max-width:750px) {}

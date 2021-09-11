@@ -1,35 +1,29 @@
 /* banner what happened */
 
+.what__happened {
+    background-size: 100%;
+    padding: var(--padding-default);
+    padding-bottom: 1.9rem;
+    background-repeat: no-repeat;
+}
+
 .title {
     font-weight: 800;
-    font-size: var(--front-size-title);
+    font-size: var(--font-size-title);
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .details {
-    font-size: var(--front-size-details);
+    font-size: var(--font-size-details);
     line-height: 1.75;
 }
 
-.what__happened {
-    position: relative;
-}
-
-.what__happened>div {
-    position: absolute;
-    top: 50%;
-    left: 173px;
-    width: 667px;
-    transform: translateY(-50%);
-    max-width: 667px;
-}
-
-.what__happened>div .title {
+.what__happened .title {
     color: var(--text-color-banner-happened);
 }
 
-.what__happened>div .details {
+.what__happened .details {
     color: var(--text-color-banner-happened);
 }
 
@@ -37,6 +31,7 @@
 /* banner best product */
 
 .best__product {
+    /* display: none; */
     position: relative;
 }
 
@@ -153,4 +148,24 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: inherit;
+}
+
+@media screen and (max-width:750px) {
+    .banner {
+        padding-top: var(--height-navbar-mobile);
+    }
+
+    .what__happened{
+        display: none;
+    }
+    .best__product{
+        display: none;
+    }
+
+    .title {
+        font-size: var(--font-size-title-mb);
+    }
+    .details {
+        font-size: var(--font-size-details-mb);
+    }
 }

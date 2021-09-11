@@ -6,12 +6,18 @@
 }
 
 :root {
+    --pc-column: 5;
+    --mobile-column: 2;
+    --padding-default: 8rem;
     --height-navbar-pc: 80px;
     --height-navbar-mobile: 50px;
-    /* Front size */
+    /* Front size pc*/
     --navbar-front-size: 14px;
-    --front-size-title: 50px;
-    --front-size-details: 20px;
+    --font-size-title: 50px;
+    --font-size-details: 20px;
+    /* font size mobile */
+    --font-size-title-mb: 2.5em;
+    --font-size-details-mb: 1em;
     /* Color */
     --default-color: #ffffff;
     --text-color-banner-happened: #ffffff;
@@ -19,7 +25,23 @@
     --text-color-banner-story: #fcd32a;
     --text-color-banner-issue: #110e03;
     /* front size product */
-    --front-size-name:0.9em;
-    --front-size-price:16px;
-    --color-price:#222222
+    --font-size-name: 0.9em;
+    --font-size-price: 16px;
+    --color-price: #222222;
+    /* front size button */
+    --font-size-btn: 16px;
+    --color-btn: #110e03;
+    /* story */
+    --color-backgroud-story: #0565bb;
+    --fort-size-story-title: 20px;
+    --fort-size-story-details: 0.8rem;
+    /* issue */
+    --color-backgroud-issue: #fccb05;
+    --font-size-issue-big: 2rem;
+    --font-size-issue-small: 1rem;
+    --color-backgroud-card: #ff5500;
+    /* foodter */
+    --font-size-foodter-title: 1rem;
+    --font-size-foodter-details: 0.8rem;
+    --color-foodter-text: #111
 }

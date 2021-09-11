@@ -1,30 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./navbar.css"
 const refImg = 'Asset/Image'
 
 function Navbar(props) {
+    const [open, isOpen] = useState(false);
+
+    const clickMenu = () => {
+        isOpen(!open)
+    }
+
     return (
-        <div class="box">
+        <div className="box">
             <img
                 src={`${process.env.PUBLIC_URL}/${refImg}/logo.svg`}
                 className="logo"
                 alt='logo'
             />
-            <ul className='navbar__menu'>
+            <ul className= {open?'navbar__menu activeMenu':'navbar__menu'} >
                 <div className="menu__item">
                     <li>Introduction</li>
                     <li>solution</li>
                     <li>Rate plan</li>
                 </div>
-                <div class="Rectangle-662"></div>
+                <div className="Rectangle-662"></div>
                 <div className="menu__item">
                     <li>login</li>
                     <li>Apply for free use</li>
                 </div>
             </ul>
-            <div className="menu__icon">
+            <div className="menu__icon" onClick={clickMenu}>
                 <img
-                    src={`${refImg}/menuIcon.png`}
+                    src={`Asset/Icon/menuIcon.png`}
                     className='menuIcon'
                     alt="menuIcon"
                 />

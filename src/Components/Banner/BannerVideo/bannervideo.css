@@ -1,0 +1,60 @@
+.banner__video {
+    background-size: 100%;
+}
+
+.banner__video .conten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__title {
+    font-size: var(--font-size-title);
+    font-weight: 800 !important;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: var(--padding-default);
+    text-transform: uppercase;
+}
+
+.video__details {
+    font-family: Montserrat;
+    font-size: var(--fort-size-story-details);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.conten>img {
+    padding-top: 2rem;
+    margin-bottom: var(--padding-default);
+}
+
+@media screen and (max-width:750px) {
+    .banner__video {
+        background-image: none !important;
+    }
+    .video__title {
+        font-size: var(--font-size-title-mb);
+        padding-top: 1rem;
+    }
+    .video__details {
+        font-size: var(--font-size-details-mb);
+    }
+    .conten>img {
+        width: 100%;
+        margin-bottom: unset;
+    }
+}

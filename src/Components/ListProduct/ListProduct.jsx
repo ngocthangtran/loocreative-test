@@ -1,3 +1,4 @@
+import ButtonSeeMode from 'Components/Button/ButtonSeeMore';
 import React, { useEffect, useState } from 'react';
 import ProductItem from './Component/ProductItem';
 import './listproduct.css'
@@ -23,6 +24,9 @@ function ListProduct(props) {
                     images &&
                     images.map((item, index) => <ProductItem image={item} key={index} />)
                 }
+            </div>
+            <div className="btn">
+                <ButtonSeeMode />
             </div>
         </div>
     );

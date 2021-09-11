@@ -1,0 +1,56 @@
+.foodter {
+    padding: 2rem 3rem 4rem 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.foodter__item {
+    flex: 0.5;
+    margin-right: 2rem;
+}
+
+.foodter__item:first-child {
+    flex: 2;
+}
+
+.foodter__item:last-child {
+    width: auto;
+    margin-right: unset;
+}
+
+.foodter__title {
+    text-align: left;
+    font-size: var(--font-size-foodter-title);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+}
+
+.foodter__details {
+    padding-top: 1rem;
+    font-size: var(--font-size-foodter-details);
+    color: var(--color-foodter-text);
+}
+
+.end {
+    color: #a9a9a9;
+    font-size: 14px;
+    padding-left: 3rem;
+    padding-bottom: var(--padding-default);
+}
+
+@media screen and (max-width:750px) {
+    .foodter {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .foodter__details{
+        padding-top: unset;
+    }
+    .end{
+        padding-left: 0;
+        padding-bottom: 1em;
+    }
+}

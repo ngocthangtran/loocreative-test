@@ -2,30 +2,26 @@ import React from 'react';
 import "./banner.css"
 function Banner(props) {
     return (
-        <>
+        <div className="banner_parent">
             <img
                 src="Asset/Image/main-banner.png"
                 className='banner'
                 style={{ width: "100%", display: 'block' }}
                 alt=""
             />
-            <div className="what__happened">
-                <img
-                    src="Asset/Image/introduction-bg.png"
-                    className='banner'
-                    style={{ width: "100%", display: 'block' }}
-                    alt=""
-                />
-                <div>
-                    <div className="title">
-                        What happened
-                    </div>
-                    <div className="details">
-                        How to create mobile-optimized videos in minutes. Not a designer,
-                        every team makes a lot of videos Can be trimmed. Take the first
-                        step to your brand's success. How to create
-                        mobile-optimized videos in minutes.
-                    </div>
+            <div className="what__happened"
+                style={{
+                    backgroundImage: 'url("Asset/Image/introduction-bg.png")'
+                }}
+            >
+                <div className="title">
+                    What happened
+                </div>
+                <div className="details">
+                    How to create mobile-optimized videos in minutes. Not a designer, <br />
+                    every team makes a lot of videos Can be trimmed. Take the first <br />
+                    step to your brand's success. How to create <br />
+                    mobile-optimized videos in minutes. <br />
                 </div>
             </div>
             <div className="best__product">
@@ -122,7 +118,7 @@ function Banner(props) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
